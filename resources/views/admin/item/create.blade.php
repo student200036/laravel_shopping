@@ -3,8 +3,17 @@
 
 <form action="{{ route('admin.item.add')}}" method=post>
     @csrf    
-
-    <label for="">商品名</label>
-    <input type="text" name="name">
-    <button>更新</button>
+    <div>
+        <label for="">{{ __('Item Name')}}</label>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <label for="">{{ __('Item Code')}}</label>
+        <input type="text" name="code">
+    </div>
+    <div>
+        <label for="">{{ __('Price')}}</label>
+        <input type="text" name="price">
+    </div>
+    <button>{{ ('Update')}}</button>
 </form>
